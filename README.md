@@ -1,10 +1,10 @@
-# parsedmarc-dockerized
+# parsedmarc-elastic-kibana-docker with updated versions to fix 'Unrecognized layerType EMS_VECTOR_TILE'
 
 ## Description
 
 This project's purpose providing an easy way deploying [parsedmarc](https://github.com/domainaware/parsedmarc) in your environment. It has built docker images ready to use, including a small init container to configure some things for you. For any inquries regarding parsedmarc itself, please see mentioned GitHub link of the main project.
 
-**Note**: The standalone `parsedmarc` docker image on [DockerHub @ patschi/parsedmarc](https://hub.docker.com/r/patschi/parsedmarc) can also be used standalone and independently, should there be any interest.
+**Note**: This is a fork of [patchis](https://github.com/patschi/parsedmarc-dockerized) to fix the versions
 
 ## Setup
 
@@ -110,9 +110,3 @@ For example, debug logs from parsedmarc will indicate that indices will be only 
    DEBUG:elastic.py:284:Creating Elasticsearch index: dmarc_aggregate-2020-09-17
 ```
 
-### I am seeing 'Unrecognized layerType EMS_VECTOR_TILE'
-
-There might have been changes to the dashboard view of parsedmarc, requiring new layer types older Kibana/Elasticsearch versions do not support.
-
-**Fix:**
-Update to Elasticsearch/Kibana 8.x.

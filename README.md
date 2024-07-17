@@ -11,7 +11,8 @@ This project's purpose providing an easy way deploying [parsedmarc](https://gith
 1. Prepare the basics:
 
     ```bash
-    git clone https://github.com/patschi/parsedmarc-dockerized.git /opt/parsedmarc-dockerized/
+    git clone https://github.com/Jokoclp/parsedmarc-elastic-kibana-docker.git /opt/parsedmarc-dockerized/
+    
     cp /opt/parsedmarc-dockerized/data/conf/parsedmarc/config.sample.ini /opt/parsedmarc-dockerized/data/conf/parsedmarc/config.ini
     ```
 
